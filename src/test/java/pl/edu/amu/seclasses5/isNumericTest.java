@@ -20,7 +20,7 @@ public class isNumericTest {
     @Test
     public void testIsNumeric() {
         System.out.println("isNumeric");
-        String str = "";
+        String str = "69420666";
         boolean expResult = false;
         boolean result = isNumeric.isNumeric(str);
         assertEquals(expResult, result);
