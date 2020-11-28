@@ -31,9 +31,10 @@ public class SuperAddition {
 class isNumeric {
     public static boolean isNumeric(String str)
     {
+    if(str.length() == 0) return false;
     for (char c : str.toCharArray())
     {
-        if (!Character.isDigit(c) && c!=45) return false;
+        if (!Character.isDigit(c)) return false;
     }
     return true;
     }
