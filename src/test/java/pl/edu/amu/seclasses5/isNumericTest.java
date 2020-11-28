@@ -18,9 +18,17 @@ public class isNumericTest {
     }
 
     @Test
-    public void testIsNumeric() {
-        System.out.println("isNumeric");
+    public void testIsNumericWhenNumber() {
+        System.out.println("isNumeric number");
         String str = "69420666";
+        boolean expResult = true;
+        boolean result = isNumeric.isNumeric(str);
+        assertEquals(expResult, result);
+    }
+    @Test
+    public void testIsNumericWhenEmpty() {
+        System.out.println("isNumeric empty");
+        String str = "";
         boolean expResult = false;
         boolean result = isNumeric.isNumeric(str);
         assertEquals(expResult, result);
